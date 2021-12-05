@@ -6,6 +6,9 @@
 \usepackage{systeme}
 \usepackage[left=2cm,top=3cm]{geometry}
 
+\let\nvec\vec
+\def\vec#1{\nvec{\vphantom t\smash{#1}}}
+
 \usetikzlibrary{datavisualization}
 \usetikzlibrary{datavisualization.formats.functions}
 

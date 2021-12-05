@@ -1,3 +1,55 @@
 \section*{Příklad 5}
 Pomocí Gram-Schmimdtova ortogonalizačního procesu najděte ortogonální a pak i ortonormální bázi prostoru generovaného vektory
-$$ \overline{a_1} = [1, 2, -3, 1], \overline{a_2} = [2,3, -2, 1], \overline{a_3} = [1, -1, 9, -2] $$
+$$
+  \vec{a_1} = [1, 2, -3, 1],
+  \vec{a_2} = [2,3, -2, 1],
+  \vec{a_3} = [1, -1, 9, -2]
+$$
+
+$$
+  \vec{b_1} = \vec{a_1} = [1, 2, -3, 1]
+$$
+
+$$
+  \vec{b_2} = \vec{a_2} + r \vec{b_1}
+$$
+
+$$
+  \vec{b_1} \cdot \vec{b_2} = \vec{b_1} \cdot \vec{a_2} + r \vec{b_1} \cdot \vec{b_1}
+$$
+
+$$
+  r = - \frac{\vec{b_1} \cdot \vec{a_2}}{\vec{b_1} \cdot \vec{b_1}}
+  = - \frac{[1, 2, -3, 1] \cdot [2,3, -2, 1]}{[1, 2, -3, 1] \cdot [1, 2, -3, 1]}
+  = - \frac{2 + 6 + 6 + 1}{1 + 4 + 9 + 1}
+  = - \frac{15}{15}
+  = -1
+$$
+
+$$
+  \vec{b_2} = \vec{a_2} + r \vec{b_1} = [2,3, -2, 1] - 1 [1, 2, -3, 1] = [1, 1, 1, 0]
+$$
+
+$$
+  \vec{b_1} \cdot \vec{b_2} = [1, 2, -3, 1] \cdot [1, 1, 1, 0] = 0
+$$
+
+$$
+  \vec{b_3} = \vec{a_3} + s \vec{b_1} + u \vec{b_2}
+$$
+
+$$
+  \vec{b_1} \cdot \vec{b_3} = \vec{b_1} \cdot \vec{a_3} + s \vec{b_1} \cdot \vec{b_1} + u \vec{b_1} \cdot \vec{b_2}
+$$
+
+$$
+  s = - \frac{\vec{b_1} \cdot \vec{a_3}}{\vec{b_1} \cdot \vec{b_1}}
+$$
+
+$$
+  \vec{b_2} \cdot \vec{b_3} = \vec{b_2} \cdot \vec{a_3} + s \vec{b_2} \cdot \vec{b_1} + u \vec{b_2} \cdot \vec{b_2}
+$$
+
+$$
+  u = - \frac{\vec{b_2} \cdot \vec{a_3}}{\vec{b_2} \cdot \vec{b_2}}
+$$
