@@ -1,4 +1,24 @@
 \section*{Příklad 3}
 Nechť $M = \left\{[x, y, z] \in \mathbb{R}^3: (x - y = y + z) \wedge (z = 2x)\right\}$.
 Zjistěte, jestli $ M(\mathbb{R})$ je podprostor $ V_3(\mathbb{R})$.
-Svoje tvrzení zdůvodněte.
+Svoje tvrzení zdůvodněte.\\
+V $M$ leží například $\vec{r} = [6,-3,12]$, $\vec{s} = [8,-4,16] \implies M \neq \emptyset$
+$$ \vec{r} + \vec{s} = [14,-7,28], \vec{r} + \vec{s} \in M $$
+$$ 2 \cdot \vec{r} = [12, -6, 18], 2 \cdot \vec{r} \in M $$
+Na konkrétním případu to fungovalo, takže můžeme začít ověřovat obecně \\
+$$ \vec{u} = [u_1,u_2,u_3], \vec{v} = [v_1,v_2,v_3] $$
+$$ \vec{u}, \vec{v} \in M $$
+$$ u_2 = -\frac{u_1}{2}, v_2 = -\frac{v_1}{2}, u_3 = 2u_1, v_3 = 2v_1 $$
+$$
+\vec{u} = \left[u_1, -\frac{u_1}{2}, 2u_1 \right],
+\vec{v} = \left[v_1, -\frac{v_1}{2}, 2v_1 \right]
+$$
+$$
+\vec{u} + \vec{v} = \left[u_1 + v_1, \frac{-u_1-v_1}{2}, 2(u_1 + v_1) \right]
+\implies \vec{u} + \vec{v} \in M
+$$
+$$
+r \vec{u} = \left[r \cdot u_1, -\frac{r \cdot u_1}{2}, 2r\cdot u_1 \right]
+\implies r \vec{u} \in M
+$$
+$ M(\mathbb{R})$ je podprostor $ V_3(\mathbb{R})$.
